@@ -15,7 +15,7 @@ const ManageBooks = () => {
   // Delete book
   const handleDelete = (Take)=>{
 console.log(Take);
-fetch(`http://localhost:3000/book/${Take}`,{
+fetch(`https://mern-book-store-frontend-dojc.onrender.com/book/${Take}`,{
   method:'DELETE',
 })
 .then(res =>res.json())
