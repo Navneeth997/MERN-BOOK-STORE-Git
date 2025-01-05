@@ -61,7 +61,7 @@ const EditBooks = () => {
         bookPDFURL:form.bookPDFURL.value
         }
         // Update the book data
-        fetch(`http://localhost:3000/book/${id}`, {
+        fetch(`https://mern-book-store-frontend-dojc.onrender.com/book/${id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(bookData),
