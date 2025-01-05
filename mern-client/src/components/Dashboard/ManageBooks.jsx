@@ -6,7 +6,7 @@ const ManageBooks = () => {
   const [allBooks, setAllBooks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/all-books")
+    fetch("https://mern-book-store-frontend-dojc.onrender.com/all-books")
       .then((res) => res.json())
       .then((data) => setAllBooks(data))
       .catch((error) => console.error("Error fetching books:", error)); // Handle errors
