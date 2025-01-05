@@ -55,7 +55,7 @@ const UploadBooks = () => {
       bookPDFURL:form.bookPDFURL.value
       }
     alert("Book Uploaded succesfully")
-    fetch("http://localhost:3000/upload-book", {
+    fetch("https://mern-book-store-frontend-dojc.onrender.com/upload-book", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
