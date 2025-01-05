@@ -5,7 +5,7 @@ const BestSellerBooks = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch("https://mern-book-store-backend-d3wz.onrender.com/all-books")
+    fetch("http://localhost:3000/all-books")
       .then((res) => res.json())
       .then((data) => setBooks(data));
   }, []);
